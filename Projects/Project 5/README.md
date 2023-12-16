@@ -43,7 +43,7 @@ Great! Now enter your new friend's name: Bob
 Great, now determine how many challengers you hope to beat in combat (enter a postitive integer): 5
 ```
 
-Each rount of fighting should look something like the below sample, with the enemy name corresponding to the current enemy and stats updating after each turn based on the actions taken.
+Each round of fighting should look something like the below sample, with the enemy name corresponding to the current enemy and stats updating after each turn based on the actions taken.
 
 ```
 Round #1
