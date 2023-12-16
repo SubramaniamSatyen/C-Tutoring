@@ -17,7 +17,8 @@ The projects folder of this repo contains the solutions and starter code to show
 * Project 1: Automated Check-Out (I/O, Loops)
 * Project 2: Receipt Processor (Arrays, Reference/Value)
 * Project 3: Tic-Tac-Toe (Classes, Header Files)
-* Project 4: 
+* Project 4: Garden Game (Classes, Dynamic Allocation)
+* Project 5: Creature Mon (Inheritance, Polymorphism)
 
 ## Additonal Resources
 
