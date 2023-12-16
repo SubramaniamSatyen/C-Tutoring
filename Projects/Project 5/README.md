@@ -13,14 +13,60 @@ Note that each fight can be broken into three distinct stages as follows
 2. Computer chooses an action (attack, defend, special attack)
 3. 
 
+Below is an example of what the initalization steps (1-3) should look like
 
-For this project, we will be creating a garden game, simulating the process of growing plants. To do so, you will implement a `Garden` and a `Plant` class. The `Garden` class must have the member variables specified in the template file (and may have additional ones as you see fit). The `Plant` class must have a default constructor, but the rest of the implementation is up to you.
+```
+Welcome to CreatureMon Battle Simulator!
 
-* `Garden` - this class represents the game board and handles interactions with user
- * `Garden(int size)` - constructor to set up the garden with a specific size
- * `~Garden()` - destructor to deallocate any dynamically allocated member variables
- * `void view()` - prints out the current garden
- * `bool takeTurn()` - handles prompting user input and displaying the game's actions (other than printing the board)
- * `void nextTurn()` - handle any step that takes place after the turn
-* `Plant` - this class represents a plant, and should keep track of the plant's age and type of plant. The type of plant should be randomly assigned.
-    * `Plant()` - plant constructor for initializing member variables
+
+-------------------------------------------------
+To begin, please select one of the CreatureMon Below!
+
+(1) Bull:
+        Type: Grass
+        Health: 60
+        Attack: 35 ...
+(2) Turtle:
+        Type: Water
+        Health: 100
+        Attack: 20 ...
+(3) Lizard:
+        Type: Fire
+        Health: 80
+        Attack: 25 ...
+
+Now Enter your selection (1, 2, or 3): 1
+
+
+Great! Now enter your new friend's name: Bob
+
+Great, now determine how many challengers you hope to beat in combat (enter a postitive integer): 5
+```
+
+Each rount of fighting should look something like the below sample, with the enemy name corresponding to the current enemy and stats updating after each turn based on the actions taken.
+
+```
+Round #1
+-------------------------------------------------
+Turtle_0's stats:
+        Health: 100
+        Attack: 20
+        Defence: 15
+
+Bob's stats:
+        Health: 60
+        Attack: 35
+        Defence: 15
+
+
+(1) Attack: strike an enemy with a powerful blow
+(2) Special Attack: bypass an enemy's defense with a secret attack stat
+(3) Defend: raise your defenses to block any attack in the current round
+
+Please enter what action you'd like on your turn (1, 2, or 3): 1
+
+-------------------------------------------------
+Bob is attacking for 20 damage!
+Turtle_0 is attacking for 5 damage!
+Press any key to continue . . .
+```
